@@ -1,0 +1,121 @@
+.modal-overlay {
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 50;
+	background: rgba(0, 0, 0, 0.6);
+  }
+
+  .modal-box {
+	background: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	max-width: 500px;
+	width: 100%;
+	animation: modalIn 0.3s ease;
+  }
+
+  .input {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #d1d5db;
+	border-radius: 0.5rem;
+	outline: none;
+  }
+  .input:focus {
+	border-color: #10b981;
+	box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+  }
+
+  .modal-overlay.active {
+	display: flex;
+  }
+  @keyframes modalIn {
+	from { transform: translateY(-20px); opacity: 0; }
+	to { transform: translateY(0); opacity: 1; }
+  }
+
+.winner-modal,
+#countdownModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; 
+  align-items: center; 
+  justify-content: center; 
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1000;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #1e1e6b, #2d1699);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.winner-emoji {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.winner-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.winner-score {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+#winnerModal,
+#countdownModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;  
+  align-items: center; 
+  justify-content: center; 
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+#winnerModal .modal-content {
+  background: linear-gradient(135deg, #1e1e6b, #2d1699);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  min-width: 280px;
+  max-width: 400px;
+}
+
+#countdownModal .countdown-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e1e6b;
+}
